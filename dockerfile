@@ -7,4 +7,4 @@ RUN git clone https://github.com/aitorru/NodeLandingPort.git
 
 WORKDIR /NodeLandingPort/
 
-ENTRYPOINT DEBUG=myapp:* npm start
+ENTRYPOINT python3 update.py

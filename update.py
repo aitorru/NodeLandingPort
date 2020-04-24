@@ -24,6 +24,6 @@ def updateGit():
 updateDeps()
 updateGit()
 try:
-    subprocess.check_call("DEBUG=myapp:* npm start", shell=True)
+    subprocess.check_call("npm run start", shell=True)
 except:
     raise EnvironmentError("No se puede iniciar node...")

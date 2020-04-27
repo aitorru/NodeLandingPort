@@ -1,17 +1,15 @@
 doctype html
 
-html
-  head
-    title= title
-    link(rel="stylesheet", href="public/stylesheet/style.css")
-  body
-    h1#pageH1 Welcome to Pug
-    a Esto es a que deberia parecer azul en pequeño
-    p.
-      This is p
-      also this is p
-    ul
-      li #1 item
-      li #2 item
-      li #3 item
+extends layout
+
+block content
+  h1#pageH1 Welcome to Pug
+  a Esto es a que deberia parecer azul en pequeño
+  p.
+    This is p
+    also this is p
+  ul
+    li #1 item
+    li #2 item
+    li #3 item
     
